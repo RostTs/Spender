@@ -1,0 +1,34 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\PagesController::home
+
+home:
+    path: /home
+    controller: App\Controller\PagesController::home
+
+create:
+    path: /createPage
+    controller: App\Controller\PagesController::createPage
+
+expensesPage:
+    path: /noteExpenses
+    controller: App\Controller\PagesController::noteExpenses
+
+incomePage:
+    path: /noteIncome
+    controller: App\Controller\PagesController::noteIncome
+
+saveIncome:
+    path: /saveIncome
+    controller: App\Controller\MoneyController::saveIncome
+    
+saveExpenses:
+    path: /saveExpenses
+    controller: App\Controller\MoneyController::saveExpenses
+
+stats:
+    path: /SeeStats
+    controller: App\Controller\MoneyController::showStats

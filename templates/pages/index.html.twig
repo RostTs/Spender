@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+{% block title %}Spending Calculator{% endblock %}
+    {% block body %}
+    {% if successMessage is defined %}
+      <h2 class="text-center text-success mt-2">{{ successMessage }}</h2> <hr>
+     {% endif %}
+      <h1 class="text-center">Описание</h1>
+      <h5 class="text-center">Здесь можно производить расчет своих расходов и доходов,вести их статистику.</h5>
+       <div class="row">
+          <div class="col m-5">
+             <div class="card">
+               <div class="card-body">
+                 <img src="{{ asset('../templates/inc/pics/document.jpg') }}"  class="img-fluid">
+               </div>
+               <div class="card-footer"><h5 class="text-center">Сохраняйте свои доходы</h5></div>
+             </div>
+          </div>
+             <div class="col m-5">
+             <div class="card">
+               <div class="card-body">
+                 <img src="{{ asset('../templates/inc/pics/document.jpg') }}"  class="img-fluid">
+               </div>
+               <div class="card-footer"><h5 class="text-center">Сохраняйте свои расходы</h5></div>
+             </div>
+          </div>
+       </div>
+
+              <div class="row">
+          <div class="col m-5">
+             <div class="card">
+               <div class="card-body">
+                 <img src="{{ asset('../templates/inc/pics/document.jpg') }}"  class="img-fluid">
+               </div>
+               <div class="card-footer"><h5 class="text-center">Ведите статистику</h5></div>
+             </div>
+          </div>
+             <div class="col m-5">
+             <div class="card">
+               <div class="card-body">
+                 <img src="{{ asset('../templates/inc/pics/document.jpg') }}"  class="img-fluid">
+               </div>
+               <div class="card-footer"><h5 class="text-center">Тратьте с умом</h5></div>
+             </div>
+          </div>
+       </div>
+    {% endblock %}

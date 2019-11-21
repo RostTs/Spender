@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% block title %}Spending Calculator{% endblock %}
+    {% block body %} 
+      <h1 class="text-center">Отлично</h1>
+      <h5 class="text-center">Каую информацию Вы хотите сохранить?</h5>
+
+     <div class="row">
+          <div class="col m-5">
+             <div class="card">
+               <div class="card-body">
+                 <img src="{{ asset('../templates/inc/pics/document.jpg') }}"  class="img-fluid">
+               </div>
+             <a href="noteIncome"><div class="card-footer"><h5 class="text-center text-success">Записать доходы</h5></div></a>
+
+             </div>
+          </div>
+             <div class="col m-5">
+             <div class="card">
+               <div class="card-body">
+                 <img src="{{ asset('../templates/inc/pics/document.jpg') }}"  class="img-fluid">
+               </div>
+               <a href="noteExpenses"><div class="card-footer"><h5 class="text-center text-danger">Записать расходы</h5></div></a>
+             </div>
+          </div>
+       </div>
+    {% endblock %}
